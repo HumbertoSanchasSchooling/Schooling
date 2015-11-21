@@ -1,0 +1,10 @@
+c:\users\humberto_portable\documents\visual studio 2015\Projects\Lab3_PaulBoyko_PROG1197\Lab3_PaulBoyko_PROG1197\bin\Debug\Lab3_PaulBoyko_PROG1197.exe.config
+G:\Users\Humberto_Portable\Documents\Visual Studio 2015\Projects\Lab3_PaulBoyko_PROG1197\Lab3_PaulBoyko_PROG1197\bin\Debug\Lab3_PaulBoyko_PROG1197.exe.config
+C:\Users\Humberto\Source\Repos\Schooling\All schooling\Lab3_PaulBoyko_PROG1197\Lab3_PaulBoyko_PROG1197\bin\Debug\Lab3_PaulBoyko_PROG1197.exe.config
+C:\Users\Humberto\Source\Repos\Schooling\All schooling\Lab3_PaulBoyko_PROG1197\Lab3_PaulBoyko_PROG1197\bin\Debug\Lab3_PaulBoyko_PROG1197.exe
+C:\Users\Humberto\Source\Repos\Schooling\All schooling\Lab3_PaulBoyko_PROG1197\Lab3_PaulBoyko_PROG1197\bin\Debug\Lab3_PaulBoyko_PROG1197.pdb
+C:\Users\Humberto\Source\Repos\Schooling\All schooling\Lab3_PaulBoyko_PROG1197\Lab3_PaulBoyko_PROG1197\obj\Debug\Lab3_PaulBoyko_PROG1197.csprojResolveAssemblyReference.cache
+C:\Users\Humberto\Source\Repos\Schooling\All schooling\Lab3_PaulBoyko_PROG1197\Lab3_PaulBoyko_PROG1197\obj\Debug\Lab3_PaulBoyko_PROG1197.Properties.Resources.resources
+C:\Users\Humberto\Source\Repos\Schooling\All schooling\Lab3_PaulBoyko_PROG1197\Lab3_PaulBoyko_PROG1197\obj\Debug\Lab3_PaulBoyko_PROG1197.csproj.GenerateResource.Cache
+C:\Users\Humberto\Source\Repos\Schooling\All schooling\Lab3_PaulBoyko_PROG1197\Lab3_PaulBoyko_PROG1197\obj\Debug\Lab3_PaulBoyko_PROG1197.exe
+C:\Users\Humberto\Source\Repos\Schooling\All schooling\Lab3_PaulBoyko_PROG1197\Lab3_PaulBoyko_PROG1197\obj\Debug\Lab3_PaulBoyko_PROG1197.pdb
