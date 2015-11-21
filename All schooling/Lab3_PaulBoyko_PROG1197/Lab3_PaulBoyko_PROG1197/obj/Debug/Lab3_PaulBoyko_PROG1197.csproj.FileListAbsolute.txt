@@ -8,3 +8,4 @@ C:\Users\Humberto\Source\Repos\Schooling\All schooling\Lab3_PaulBoyko_PROG1197\L
 C:\Users\Humberto\Source\Repos\Schooling\All schooling\Lab3_PaulBoyko_PROG1197\Lab3_PaulBoyko_PROG1197\obj\Debug\Lab3_PaulBoyko_PROG1197.csproj.GenerateResource.Cache
 C:\Users\Humberto\Source\Repos\Schooling\All schooling\Lab3_PaulBoyko_PROG1197\Lab3_PaulBoyko_PROG1197\obj\Debug\Lab3_PaulBoyko_PROG1197.exe
 C:\Users\Humberto\Source\Repos\Schooling\All schooling\Lab3_PaulBoyko_PROG1197\Lab3_PaulBoyko_PROG1197\obj\Debug\Lab3_PaulBoyko_PROG1197.pdb
+C:\Users\Humberto\Source\Repos\Schooling\All schooling\Lab3_PaulBoyko_PROG1197\Lab3_PaulBoyko_PROG1197\obj\Debug\Lab3_PaulBoyko_PROG1197.Queue.resources

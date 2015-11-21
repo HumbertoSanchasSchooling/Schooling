@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab3_PaulBoyko_PROG1197
 {
-    class ToDo
+    public class ToDo
     {
         private string toDo;
         private string priority;

@@ -6,60 +6,98 @@ using System.Threading.Tasks;
 
 namespace Lab3_PaulBoyko_PROG1197
 {
-    class Queue
+    public class ToDoQueue
     {
-        private List<ToDo> priorityLvl;
-        private string priorityLvlName;
-        private Queue next;
-        private Queue prev;
-        private bool first;
+        private List<ToDo> queue;          
         
-        
-        public List<ToDo> PriortyLevels
+        public List<ToDo> Queue
         {
-            get { return this.priorityLvl; }
-            set { this.priorityLvl = value; }
+            get { return this.queue; }
+            set { this.queue = value; }
         } 
 
-        public string PriorityLvlName
+        public ToDo First
         {
-            get { return this.priorityLvlName; }
-            set { this.priorityLvlName = value; }
-        }
-
-        public Queue Next
-        {
-            get { return this.next; }
-            set { this.next = value; }
-        }
-
-        public Queue Previous
-        {
-            get { return this.prev; }
-            set { this.prev = value; }
-        }
-
-        public Queue (string pln)
-        {
-            priorityLvl = new List<ToDo>();
-            priorityLvlName = pln;
-            next = null;
-            prev = null;
-        }
-
-        public void First()
-        {
-            foreach (ToDo first in this.priorityLvl)
+            get
             {
-                if(first.Next == null)
+                foreach (var first in this.queue)
                 {
-                    this.first = true;
+                    if (first.Next == null)
+                        return first;
+                }
+                return new ToDo("No Tasks To Do", "");
+            }        
+                     
+        }
+
+        public ToDoQueue()
+        {
+            queue = new List<ToDo>();
+        }
+
+        public int Count()
+        {
+            var c = 0;
+            foreach (ToDo first in this.queue)
+            {
+                c++;
+            }
+            return c;
+        }
+
+        public void Enqueue(ToDo newToDo)
+        {
+            if (newToDo != null)
+            {
+                if (queue.Count() == 0)
+                {
+                    //this.queue.Add(newToDo);
                 }
                 else
                 {
-                    this.first = false;
-                }                
-            }                 
+                    var priorityLvl = queue.Where(q => q.Priority == newToDo.Priority);
+                    if (priorityLvl.Any())
+                    {
+                        foreach (var td in priorityLvl)
+                        {
+                            var lastInPrior = priorityLvl.Where(t => t == td.Previous);
+                            if (!lastInPrior.Any())
+                            {
+                                if (td.Previous != null)
+                                {
+                                    var newPrev = td.Previous;
+                                    newToDo.Previous = newPrev;
+                                    newToDo.Next = td;
+                                    td.Previous = newToDo;
+                                    newPrev.Next = newToDo;
+                                    //queue.Add(newToDo);
+                                }
+                                else
+                                {
+                                    td.Previous = newToDo;
+                                    newToDo.Next = td;
+                                    //queue.Add(newToDo);
+                                }
+                            }
+                        }
+                    }
+
+                }
+                this.queue.Add(newToDo);
+            }
+        }
+
+        public void Dequeue()
+        {
+            var newFirst = this.First.Previous;
+            newFirst.Next = null;                        
+            queue.Remove(this.First);
+            //this.frst = newFirst;
+        }
+
+        public ToDo Peek()
+        {
+            return this.First;
         }
     }
 }

@@ -10,11 +10,23 @@ using System.Windows.Forms;
 
 namespace Lab3_PaulBoyko_PROG1197
 {
-    public partial class Form1 : Form
+    public partial class Queue : Form
     {
-        public Form1()
+
+        public ToDoQueue nQue = new ToDoQueue();
+
+        public Queue()
         {
-            InitializeComponent();
+            InitializeComponent();            
         }
+
+        private void btnAddToDo_Click(object sender, EventArgs e)
+        {
+            var nToDo = new ToDo(txtAddToDo.Text, ddlPriority.Text);
+            nQue.Enqueue(nToDo);
+            lblNextOutput.Text = nQue.First.ThingToDo;         
+        }
+
+       
     }
 }

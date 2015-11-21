@@ -16,19 +16,11 @@ namespace Lab3_PaulBoyko_PROG1197
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Queue());
 
-            Queue crit = new Queue("Critical");
-            Queue high = new Queue("High");
-            Queue normal = new Queue("Normal");
-            Queue low = new Queue("Low");
+            
 
-            crit.Previous = high;
-            high.Next = crit;
-            high.Previous = normal;
-            normal.Next = high;
-            normal.Previous = low;
-            low.Next = normal;
+            
         }
     }
 }
